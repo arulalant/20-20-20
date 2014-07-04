@@ -11,7 +11,7 @@ INSTALL
 
 Download and extract it.
 
-This is mun-agaram (pre-alpha) release.
+This is `mun-agaram` (`pre-alpha`) release.
 So user may need to run it via quickly command.
 
 From mun-agaram release onwards, 20-20-20 can run by system native python itself.
