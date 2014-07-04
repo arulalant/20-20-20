@@ -20,11 +20,13 @@ From mun-agaram release onwards, 20-20-20 can run by system native python itself
   $ sudo apt-get install quickly
 </pre>
 
-Go to eye-refresher-20-20-20 and then run 
+Go to eye-refresher-20-20-20 
 
 <pre>
   $ cd eye-refresher-20-20-20
 </pre>
+
+and then run it in background
 
 <pre>
   $ quickly run &
