@@ -44,7 +44,7 @@ def run(window):
     window.show()  
     window.activate_by_default()
     # initial set 1 sec time delay to start counter/timer
-    GLib.timeout_add_seconds(2, window.timer)    
+    GLib.timeout_add_seconds(1, window.timer)    
     # hide gui after 22 seconds 
     GLib.timeout_add_seconds(22, hideWindows, window)
     GLib.timeout_add_seconds(23, Gtk.main_quit)
