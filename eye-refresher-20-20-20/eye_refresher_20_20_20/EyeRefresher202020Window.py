@@ -17,7 +17,7 @@
 
 from locale import gettext as _
 from gi.repository import Gtk, GLib # pylint: disable=E0611
-import logging
+import logging, os
 logger = logging.getLogger('eye_refresher_20_20_20')
 
 from eye_refresher_20_20_20_lib import Window
@@ -25,7 +25,18 @@ from eye_refresher_20_20_20.AboutEyeRefresher202020Dialog import AboutEyeRefresh
 from eye_refresher_20_20_20.PreferencesEyeRefresher202020Dialog import PreferencesEyeRefresher202020Dialog
 # See eye_refresher_20_20_20_lib.Window.py for more details about how this class works
 
-
+try:
+  import pwd
+except ImportError:
+  import getpass
+  pwd = None
+  
+def current_user():
+  if pwd:
+    return pwd.getpwuid(os.geteuid()).pw_name
+  else:
+    return getpass.getuser()
+    
 class EyeRefresher202020Window(Window):
     __gtype_name__ = "EyeRefresher202020Window"
 
@@ -37,9 +48,14 @@ class EyeRefresher202020Window(Window):
 
         self.AboutDialog = AboutEyeRefresher202020Dialog
         self.PreferencesDialog = PreferencesEyeRefresher202020Dialog
-        self.timer_label = builder.get_object('20_20_20')
+        self.timer_label = builder.get_object('20_20_20')        
+        self.update_username()
         # Code for other initialization actions should be added here.
-
+    
+    def update_username(self):
+        hello_label = self.builder.get_object('hello')
+        hello_label.set_label('Hello %s!' % current_user().capitalize())
+    
     def activate_by_default(self):
         self.visiblewindow = self.builder.get_object('visiblewindow')
         self.visiblewindow.show()
