@@ -1,7 +1,7 @@
 20-20-20
 ========
 
-Every 20 mintues, look at an object for 20 seconds which is away from 20 meters distance.
+Every 20 mintues, focus your eyes on an object which is located 20 feet away from monitor for 20 seconds !
 
 Read more about 20-20-20 here http://en.wikipedia.org/wiki/Computer_vision_syndrome#Therapy
 
