@@ -1,0 +1,9 @@
+<glade-catalog name="about_eye_refresher_20_20_20_dialog" domain="glade-3" 
+               depends="gtk+" version="1.0">
+  <glade-widget-classes>
+    <glade-widget-class title="About Eye Refresher 20 20 20 Dialog" name="AboutEyeRefresher202020Dialog" 
+                        generic-name="AboutEyeRefresher202020Dialog" parent="GtkAboutDialog"
+                        icon-name="widget-gtk-about-dialog"/>
+  </glade-widget-classes>
+
+</glade-catalog>

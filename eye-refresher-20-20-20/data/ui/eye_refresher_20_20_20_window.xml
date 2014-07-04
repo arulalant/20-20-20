@@ -1,0 +1,8 @@
+<glade-catalog name="eye_refresher_20_20_20_window" domain="glade-3" 
+               depends="gtk+" version="1.0">
+  <glade-widget-classes>
+    <glade-widget-class title="Eye Refresher 20 20 20 Window" name="EyeRefresher202020Window" 
+                        generic-name="EyeRefresher202020Window" parent="GtkWindow"
+                        icon-name="widget-gtk-window"/>
+  </glade-widget-classes>
+</glade-catalog>

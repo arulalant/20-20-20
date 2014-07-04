@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Eye Refresher 20 20 20
+_Comment=EyeRefresher202020 application
+Categories=GNOME;Utility;
+Exec=eye-refresher-20-20-20
+Icon=eye-refresher-20-20-20
+Terminal=false
+Type=Application
