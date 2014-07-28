@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
 <interface>
-  <!-- interface-requires gtk+ 3.0 -->
+  <requires lib="gtk+" version="3.0"/>
   <!-- interface-requires eye_refresher_20_20_20_window 1.0 -->
   <!-- interface-local-resource-path ../media -->
   <object class="GtkImage" id="image1">
@@ -16,14 +17,15 @@
   <object class="EyeRefresher202020Window" id="eye_refresher_20_20_20_window">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
+    <property name="opacity">0.5</property>
     <property name="hexpand">True</property>
     <property name="vexpand">True</property>
     <property name="title" translatable="yes">Eye Refresher 20 20 20</property>
     <property name="window_position">center-always</property>
-    <property name="icon">../media/eye-refresher-20-20-20.svg</property>
+    <property name="icon">../media/eye.png</property>
+    <property name="urgency_hint">True</property>
     <property name="decorated">False</property>
     <property name="gravity">static</property>
-    <property name="opacity">0.5</property>
     <property name="startup_id">0e1y2e3r4e5s6t7</property>
     <signal name="activate-default" handler="activate_by_default" swapped="no"/>
     <child>
@@ -113,12 +115,11 @@
     <property name="default_height">200</property>
     <property name="destroy_with_parent">True</property>
     <property name="hide_titlebar_when_maximized">True</property>
-    <property name="icon">../media/eye-refresher-20-20-20.svg</property>
     <property name="icon_name">20-20-20</property>
+    <property name="urgency_hint">True</property>
     <property name="accept_focus">False</property>
     <property name="decorated">False</property>
     <property name="deletable">False</property>
-    <property name="ubuntu_no_proxy">True</property>
     <child>
       <object class="GtkLayout" id="layout1">
         <property name="visible">True</property>
